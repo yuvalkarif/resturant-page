@@ -4,12 +4,13 @@ const cont = document.createElement("div");
 cont.setAttribute(`id`,`content`);
 document.body.appendChild(cont);
 const title = document.createElement('h1');
-const para = document.createElement(`p`);
+
 const header = document.createElement(`div`);
 
 title.innerText=`Yuval's Home Kitchen`;
-para.innerText=`The YHK Brand offers unique dishesh each day, made by hand from fresh ingredients`;
+
 header.setAttribute(`id`,`header`);
+
 
 function headerMaker() {
   const ul =document.createElement('ul');
@@ -35,17 +36,12 @@ function headerMaker() {
   
 
 
-function picComp() {
-    const Pic1 = new Image();
-  Pic1.src = Pic;
-  Pic1.setAttribute(`class`,`pic`);
-    return Pic1;
-}
+ 
 
   cont.appendChild(title);
   cont.appendChild(header);
   header.appendChild(headerMaker());
-  cont.appendChild(picComp());
-  cont.appendChild(para);
+
+ 
  
 
