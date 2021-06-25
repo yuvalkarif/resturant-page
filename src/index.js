@@ -1,5 +1,4 @@
 //Imports
-import Pic1 from './karif.png';
 import './style.css';
 import './init.js';
 import homePageElement from './home.js';
@@ -14,12 +13,7 @@ data.setAttribute(`id`,`data`);
 const homeBtn =document.getElementById("home");
 const menuBtn =document.getElementById("menu");
 const aboutBtn =document.getElementById("about");
-function picComp() {
-    const karifPhoto = new Image();
-  karifPhoto.src = Pic1;
-  karifPhoto.setAttribute(`class`,`pic`);
-    return karifPhoto;
-}
+
 
 //Initial Tree
 cont.appendChild(data);
