@@ -15,7 +15,6 @@ elem.setAttribute(`id`,`homePage`);
 elem.appendChild(picComp());
 elem.appendChild(contentMaker());
 
-console.log(elem);
 export default {elem};
 
 

@@ -1,8 +1,16 @@
-
-import Pic from './pic1.jpg';
+import Pic1 from './karif.png';
+function picComp() {
+    const karifPhoto = new Image();
+  karifPhoto.src = Pic1;
+  karifPhoto.setAttribute(`id`,`logo`);
+    return karifPhoto;
+}
 const cont = document.createElement("div");
+const headline = document.createElement("div");
+headline.setAttribute(`id`,`headline`);
 cont.setAttribute(`id`,`content`);
 document.body.appendChild(cont);
+cont.appendChild(headline);
 const title = document.createElement('h1');
 
 const header = document.createElement(`div`);
@@ -18,7 +26,6 @@ function headerMaker() {
     c1:[document.createElement('li'),`home`],
     c2:[document.createElement('li'),`menu`],
     c3:[document.createElement('li'),`about`],}
-    console.log(li.c1[1]);
     
   for(const prop in li ){
       const liElem = li[prop][0];
@@ -31,14 +38,9 @@ function headerMaker() {
     }
     return ul;
   }
+  headline.appendChild(picComp());
+  headline.appendChild(title);
   
-
-  
-
-
- 
-
-  cont.appendChild(title);
   cont.appendChild(header);
   header.appendChild(headerMaker());
 
